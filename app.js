@@ -43,7 +43,7 @@ document.querySelector('.game-info .category span').innerHTML = `${randomPropNam
 let lettersGuessContainer = document.querySelector('.letters-guess');
 //Convert Chosen Word To Araay
 let lettersAndSpace = Array.from(randomValueValue);
-/////////////////////////////////////////////////////////
+///////////////////////////// i wanna make func =>  when wright the word Correct?apperd popup masseg ''congratolation:showmasge 'game over'  ////////////////////////////
 
 // Congratolation = () => {
 // 	document.addEventListener('click', (e) => {
@@ -71,7 +71,7 @@ let lettersAndSpace = Array.from(randomValueValue);
 // 	});
 // };
 // Congratolation();
-//////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
 
 //create spans depend on word
 lettersAndSpace.forEach((letter) => {
@@ -138,42 +138,9 @@ document.addEventListener('click', (e) => {
 	}
 });
 
-//End game Function
-// endGame = () => {
-// 	//Create Popup Div
-// 	let div = document.createElement('div');
-// 	//Create Text
-// 	let divText = document.createTextNode(`Game Over , The Word Is ${randomValueValue} `);
-// 	//Append Text To Div
-// 	div.appendChild(divText);
-// 	//Add Class On The Div
-// 	div.classList = 'popup';
-// 	//Append To The Body
-// 	document.body.appendChild(div);
-// };
-// endGame = () => {
-// 	var ShowMaseg = 'afjsfkjshfkjsahfjkhsjgk',
-// 	var typeAuto = setInterval(() => {
-// 		i = 0;
-// 		let divText = (document.createTextNode('Game Over , The Word Is') += ShowMaseg[i]);
-// 		i = i + 1;
-// 		//Create Popup Div
-// 		let div = document.createElement('div');
-// 		//Create Text
-// 		// let divText = document.createTextNode(`Game Over , The Word Is ${randomValueValue} `);
-
-// 		//Append Text To Div
-// 		div.appendChild(divText);
-// 		//Add Class On The Div
-// 		div.classList = 'popup';
-// 		//Append To The Body
-// 		document.body.appendChild(div);
-// 	}, 1000);
-// }
-
-//End game Function
+// End game Function
 endGame = () => {
-	// Create Popup Div
+	//Create Popup Div
 	let div = document.createElement('div');
 	//Create Text
 	let divText = document.createTextNode(`Game Over , The Word Is ${randomValueValue} `);
@@ -184,6 +151,7 @@ endGame = () => {
 	//Append To The Body
 	document.body.appendChild(div);
 };
+///////////////////////////// i wanna make func setInterval when apperd the masseg => `Game Over , The Word Is : but i dont make it ////////////////////////////
 // End game Function
 // endGame = () => {
 // 	setInterval(() => {
